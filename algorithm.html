@@ -15,34 +15,14 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		
 		
-		
 		<script type="text/x-mathjax-config">
-			MathJax.Hub.Config({ 
-				tex2jax: {inlineMath: [['′,′']]} 
-			}); 
-		</script> 
-		<script src="http://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
-
-
-		<script type="text/x-mathjax-config"> 
-			MathJax.Hub.Config({
-				extensions: [],
-				jax: ["input/TeX", "output/HTML-CSS"],
-				preRemoveClass: "mathjax-preview", 
-				"HTML-CSS": { availableFonts: ["TeX"] } 
-			}); 
-		</script> 
-		<script src="http://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
-		
-		
-		<script type="text/x-mathjax-config">
-		 MathJax.Hub.Config({
-			 tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-		 });
-		</script>
-		<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
+    		MathJax.Hub.Config({
+    		 tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    		});
+    	</script>
+    	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
 	</head>
 	<body>
 
@@ -107,32 +87,27 @@ ex) 10번 고정(연산 횟수 동일): 공정한 비교
 </pre>
 
 
-$$ y = \frac {ax}{b} $$
-<br><br>
+<p>$ x $에 관한 이차방정식 $ ax^2 + bx + c = 0 $의 해는 다음과 같다.</p>
+<p>$$ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $$</p>
+
+<pre>
+	
 
 
-\[
-\left( \sum_{k=1}^n a_k b_k \right)^{\!\!2} \leq
- \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-\]
 
-<br><br>
+<a href="http://www.codecogs.com/eqnedit.php?latex=o" target="_blank"><img src="http://latex.codecogs.com/gif.latex?o" title="o" /></a>-notation(빅오 표기): 
 
-$
- O-notation(빅오 표기): 
- $
- 
-![Alt text](/path/to/img.jpg)
+<img src="images/bigo-notation.PNG" alt="" />
 
- $
- \Omega-notation(오메가 표기)\\
- $
- 
- $
- \Theta-notation(쎄타 표기)\\
- $
 
-								
+
+<a href="http://www.codecogs.com/eqnedit.php?latex=\Omega" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\Omega" title="\Omega" /></a>-notation(오메가 표기): 
+
+
+<a href="http://www.codecogs.com/eqnedit.php?latex=\Theta" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\Theta" title="\Theta" /></a>-notation(쎄타 표기): 
+
+</pre>
+							
 									
 									<hr class="major" />
 
