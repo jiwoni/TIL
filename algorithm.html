@@ -20,7 +20,7 @@
     		 tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
     		});
     	</script>
-    	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 	</head>
 	<body>
@@ -86,31 +86,39 @@ ex) 10번 고정(연산 횟수 동일): 공정한 비교
 </pre>
 
 
-<p>$ x $에 관한 이차방정식 $ ax^2 + bx + c = 0 $의 해는 다음과 같다.</p>
-<p>$$ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $$</p>
+<a href="http://www.codecogs.com/eqnedit.php?latex=o" target="_blank"><img src="http://latex.codecogs.com/gif.latex?o" title="o" /></a>-notation(빅오 표기):  $O$$(g(n))$ $=$ $\{f(n)$ : $n$ $\geq$  $n_{0}$  인 모든 $n$에 대해 0 $\preceq$ $f(n)$ $\preceq$ $cg(n)$을 만족하는 양수 상수 $c$와 $n_{0}$가 존재 $\}$  <br>
 
-<pre>
-	
- <div style="offsetWidth: 720; offsetHeight: 54; width: 714px; height: 48px; position: static; top: auto; right: auto; bottom: auto; left: auto; margin-top: 0px; margin-right: 0px; margin-bottom: 6px; margin-left: 0px; color: #000000; display: block; visibility: visible">
-    <p>
-    </p><p>When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are<br>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
-    <p></p>
-</div>
-<br><br><br><br>
+<img src="images/bigo-notation.PNG" alt="" /><br>
 
-<a href="http://www.codecogs.com/eqnedit.php?latex=o" target="_blank"><img src="http://latex.codecogs.com/gif.latex?o" title="o" /></a>-notation(빅오 표기): 
-
-<img src="images/bigo-notation.PNG" alt="" />
+ - $n_{0}$보다 오른쪽에 있는 모든 $n$에 대해서 함수 $f(n)$의 값은 $cg(n)$과 같거나 <b>아래쪽</b>에 있다.<br>
+ - $g(n)$을 함수 $f(n)$의 점근적 <b>상한</b>(asympotic upper bound)이라고 한다. <br>
+ - 그림 $f(n)$이 성능 분석의 대상함수, $cg(n)$는 기준이 되는 함수<br>
+ - 점근적 상한은 시간(y축)이 지남에 따라 아무리 $f(n)$이 커지더라도 $cg(n)$보다는 커지지 않는다.<br>
 
 
+<br><br><br>
 
-<a href="http://www.codecogs.com/eqnedit.php?latex=\Omega" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\Omega" title="\Omega" /></a>-notation(오메가 표기): 
+
+<a href="http://www.codecogs.com/eqnedit.php?latex=\Omega" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\Omega" title="\Omega" /></a>-notation(오메가 표기):   $\Omega $$(g(n))$ $=$ $\{f(n)$ : $n$ $\geq$  $n_{0}$  인 모든 $n$에 대해 0 $\preceq$ $cg(n)$ $\preceq$ $f(n)$을 만족하는 양수 상수 $c$와 $n_{0}$가 존재 $\}$  <br>
+<img src="images/omega-notation.PNG" alt="" /><br>
+
+ - $n_{0}$보다 오른쪽에 있는 모든 $n$에 대해서 함수 $f(n)$의 값은 $cg(n)$과 같거나 <b>위쪽</b>에 있다.<br>
+ - $g(n)$을 함수 $f(n)$의 점근적 <b>하한</b>(asympotic lower bound)이라고 한다. <br>
+ - 그림 $f(n)$이 성능 분석의 대상함수, $cg(n)$는 기준이 되는 함수<br>
+ - 점근적 하한은 시간(y축)이 지남에 따라 $f(n)$이 $cg(n)$보다는 내려갈 수 없는 범위를 찾는 문제(결국 $cg(n)$보다 느리다).<br>
+
+<br><br><br>
 
 
-<a href="http://www.codecogs.com/eqnedit.php?latex=\Theta" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\Theta" title="\Theta" /></a>-notation(쎄타 표기): 
 
-</pre>
-							
+<a href="http://www.codecogs.com/eqnedit.php?latex=\Theta" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\Theta" title="\Theta" /></a>-notation(쎄타 표기):  $\Theta $ $(g(n))$ $=$ $\{f(n)$ : $n$ $\geq$  $n_{0}$  인 모든 $n$에 대해 0 $\preceq$ $c_{1}g(n) $ $\preceq$ $f(n)$ $\preceq$ $c_{2}g(n)$ 을 만족하는 양수 상수 $c_{1}$, $c_{2}$와 $n_{0}$가 존재 $\}$  <br>
+<img src="images/theta-notation.PNG" alt="" /><br>
+
+ - $n_{0}$보다 오른쪽에 있는 모든 $n$에 대해서 함수 $f(n)$의 값은 c_{1}g(n) 과 같거나 <b>위쪽</b>에 있고, c_{2}g(n)과 같거나 <b>아래쪽</b>에 있다. <br>
+ - $g(n)$을 함수 $f(n)$의 점근적 <b>상한</b> 및 <b>하한</b>(asympotic <b>tight</b> bound)이라고 한다. <br>
+ - 그림 $f(n)$이 성능 분석의 대상함수, $cg(n)$는 기준이 되는 함수<br>
+ - 점근적 상한 및 하한은 c_{1}g(n) 과 c_{2}g(n) 사이에 있는 함수, 즉 아무리 빨라도 c_{1}g(n) 보다는 느리고  c_{2}g(n) 보다는 빠르다.<br>
+						
 									
 									<hr class="major" />
 
