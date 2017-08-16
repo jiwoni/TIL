@@ -13,6 +13,36 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		
+		
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({ 
+				tex2jax: {inlineMath: [['′,′']]} 
+			}); 
+		</script> 
+		<script src="http://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+
+
+		<script type="text/x-mathjax-config"> 
+			MathJax.Hub.Config({
+				extensions: [],
+				jax: ["input/TeX", "output/HTML-CSS"],
+				preRemoveClass: "mathjax-preview", 
+				"HTML-CSS": { availableFonts: ["TeX"] } 
+			}); 
+		</script> 
+		<script src="http://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+		
+		
+		<script type="text/x-mathjax-config">
+		 MathJax.Hub.Config({
+			 tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		 });
+		</script>
+		<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
 	</head>
 	<body>
 
@@ -38,7 +68,7 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Algorithm</h1>
+										<h3>Algorithm</h3>
 									</header>
 
 									<p> 컴퓨터 알고리즘 정의 : 효율적으로, 단계적으로 문제를 해결하는 방법 <br>
@@ -52,12 +82,57 @@
 									-성능 분석: 수행시간(Running time), 사용공간(Space consumption)<br>
 									</p>
 									
-									<p>알고리즘 수행시간 분석<br>
-									-수행연산의 횟수를 비교하는 방식으로 성능을 분석<br>
-									ex) android 10s, pc 1s, server 0.1s = > 1s * 10번 , 0.1
-									
-									
-									</p>
+							
+									<pre>
+										
+##알고리즘 수행시간 분석
+
+-수행연산의 횟수를 비교하는 방식으로 성능을 분석
+
+ex) 10번 고정(연산 횟수 동일): 공정한 비교
+    android 10s => 1s * 10번 
+    pc 1s => 0.1s * 10번 
+    server 0.1s => 0.01s * 10번
+좋은 알고리즘은 연산의 횟수를 줄이는 것
+
+
+###성능 분석의 비교 대상
+
+-산술 연산(Arithmetic Calculation) : Add, Multiply, Exponent, Modular...
+-데이터 입출력 (Data Movement) : Copy, Move, Sava, Load...
+-제어 연산(Access Control): if, while, Register....
+
+- 점근적 표기법(Asymptotic notation)
+
+</pre>
+
+
+$$ y = \frac {ax}{b} $$
+<br><br>
+
+
+\[
+\left( \sum_{k=1}^n a_k b_k \right)^{\!\!2} \leq
+ \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\]
+
+<br><br>
+
+$
+ O-notation(빅오 표기): 
+ $
+ 
+![Alt text](/path/to/img.jpg)
+
+ $
+ \Omega-notation(오메가 표기)\\
+ $
+ 
+ $
+ \Theta-notation(쎄타 표기)\\
+ $
+
+								
 									
 									<hr class="major" />
 
@@ -185,6 +260,12 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			
+			
+			
+			
 
 	</body>
 </html>
+
+
